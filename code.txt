@@ -1,0 +1,44 @@
+CREATE TABLE logs
+(
+  "text" text,
+  "added" timestamp without time zone
+)
+
+
+
+CREATE TRIGGER log
+AFTER INSERT OR UPDATE OR DELETE ON jilci FOR EACH ROW EXECUTE PROCEDURE add_to_log ();
+
+CREATE OR REPLACE FUNCTION add_to_log() RETURNS TRIGGER AS $$
+DECLARE
+    mstr varchar(30);
+    astr varchar(100);
+    retstr varchar(254);
+BEGIN
+    IF    TG_OP = 'INSERT' THEN
+        astr = NEW.fio;
+        mstr := 'Add new fio ';
+        retstr := mstr || astr;
+        INSERT INTO logs(text,added) values (retstr,NOW());
+        RETURN NEW;
+    ELSIF TG_OP = 'UPDATE' THEN
+        astr = NEW.fio;
+        mstr := 'Update fio ';
+        retstr := mstr || astr;
+        INSERT INTO logs(text,added) values (retstr,NOW());
+        RETURN NEW;
+    ELSIF TG_OP = 'DELETE' THEN
+        astr = OLD.fio;
+        mstr := 'Remove fio ';
+        retstr := mstr || astr;
+        INSERT INTO logs(text,added) values (retstr,NOW());
+        RETURN OLD;
+    END IF;
+END;
+$$ LANGUAGE plpgsql;
+
+Таблица logs
+
+"Update fio Горяйнов";"2012-11-07 02:08:56.453"
+"Add new fio Прочев";"2012-11-07 02:11:09.687"
+"Remove fio Прочев";"2012-11-07 02:13:01.031"
