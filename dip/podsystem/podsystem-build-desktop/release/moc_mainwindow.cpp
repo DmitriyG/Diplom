@@ -1,15 +1,15 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'enter.h'
+** Meta object code from reading C++ file 'mainwindow.h'
 **
-** Created: Sun 25. Nov 03:10:17 2012
+** Created: Sun 25. Nov 22:12:47 2012
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.7.0)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../../podsystem/enter.h"
+#include "../../podsystem/mainwindow.h"
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'enter.h' doesn't include <QObject>."
+#error "The header file 'mainwindow.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 62
 #error "This file was generated using the moc from 4.7.0. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -17,13 +17,13 @@
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
-static const uint qt_meta_data_Enter[] = {
+static const uint qt_meta_data_MainWindow[] = {
 
  // content:
        5,       // revision
        0,       // classname
        0,    0, // classinfo
-       1,   14, // methods
+       2,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -31,50 +31,50 @@ static const uint qt_meta_data_Enter[] = {
        0,       // signalCount
 
  // slots: signature, parameters, type, tag, flags
-       7,    6,    6,    6, 0x08,
+      12,   11,   11,   11, 0x0a,
+      18,   11,   11,   11, 0x0a,
 
        0        // eod
 };
 
-static const char qt_meta_stringdata_Enter[] = {
-    "Enter\0\0enter_bd()\0"
+static const char qt_meta_stringdata_MainWindow[] = {
+    "MainWindow\0\0tab()\0pole()\0"
 };
 
-const QMetaObject Enter::staticMetaObject = {
-    { &QDialog::staticMetaObject, qt_meta_stringdata_Enter,
-      qt_meta_data_Enter, 0 }
+const QMetaObject MainWindow::staticMetaObject = {
+    { &QMainWindow::staticMetaObject, qt_meta_stringdata_MainWindow,
+      qt_meta_data_MainWindow, 0 }
 };
 
 #ifdef Q_NO_DATA_RELOCATION
-const QMetaObject &Enter::getStaticMetaObject() { return staticMetaObject; }
+const QMetaObject &MainWindow::getStaticMetaObject() { return staticMetaObject; }
 #endif //Q_NO_DATA_RELOCATION
 
-const QMetaObject *Enter::metaObject() const
+const QMetaObject *MainWindow::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
 }
 
-void *Enter::qt_metacast(const char *_clname)
+void *MainWindow::qt_metacast(const char *_clname)
 {
     if (!_clname) return 0;
-    if (!strcmp(_clname, qt_meta_stringdata_Enter))
-        return static_cast<void*>(const_cast< Enter*>(this));
-    if (!strcmp(_clname, "Ui::Form"))
-        return static_cast< Ui::Form*>(const_cast< Enter*>(this));
-    return QDialog::qt_metacast(_clname);
+    if (!strcmp(_clname, qt_meta_stringdata_MainWindow))
+        return static_cast<void*>(const_cast< MainWindow*>(this));
+    return QMainWindow::qt_metacast(_clname);
 }
 
-int Enter::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QDialog::qt_metacall(_c, _id, _a);
+    _id = QMainWindow::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: enter_bd(); break;
+        case 0: tab(); break;
+        case 1: pole(); break;
         default: ;
         }
-        _id -= 1;
+        _id -= 2;
     }
     return _id;
 }

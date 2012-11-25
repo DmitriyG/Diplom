@@ -3,6 +3,7 @@
 #include <QtGui>
 #include <QtSql>
 #include "tab.h"
+#include "pole.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -30,27 +31,16 @@ void MainWindow::tab()
    dialog->tableView->setModel(model);
    dialog->tableView->horizontalHeader()->setResizeMode( QHeaderView::Stretch );
    dialog->show();
-/*
-   ui->tableView->setFocus();
-   QModelIndex index = ui->tableView->currentIndex();
-   QSqlRecord record;
-   record = model->record(index.row());
-   model_1->setQuery ("INSERT INTO settings (table_name) VALUES ('"
-                      + record.value("tablename").toString());
-*/
 }
 
 void MainWindow::pole()
 {
    QSqlQueryModel *model = new QSqlQueryModel();
    model->setQuery("SELECT attname FROM pg_attribute, pg_type WHERE typname = 'jilci' AND attrelid = typrelid AND attname NOT IN ('cmin', 'cmax', 'ctid', 'oid', 'tableoid', 'xmin', 'xmax')");
-   L_TAB *dialog = new L_TAB;
-   dialog->tableView->setModel(model);
-   dialog->tableView->horizontalHeader()->setResizeMode( QHeaderView::Stretch );
+   Pole *dialog = new Pole;
+   dialog->listView->setModel(model);
    dialog->show();
 }
-
-
 
 MainWindow::~MainWindow()
 {

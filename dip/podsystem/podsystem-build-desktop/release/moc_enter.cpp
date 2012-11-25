@@ -1,15 +1,15 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'tab.h'
+** Meta object code from reading C++ file 'enter.h'
 **
-** Created: Sun 25. Nov 03:10:19 2012
+** Created: Sun 25. Nov 22:12:49 2012
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.7.0)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
 
-#include "../../podsystem/tab.h"
+#include "../../podsystem/enter.h"
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'tab.h' doesn't include <QObject>."
+#error "The header file 'enter.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 62
 #error "This file was generated using the moc from 4.7.0. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -17,7 +17,7 @@
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
-static const uint qt_meta_data_L_TAB[] = {
+static const uint qt_meta_data_Enter[] = {
 
  // content:
        5,       // revision
@@ -36,42 +36,42 @@ static const uint qt_meta_data_L_TAB[] = {
        0        // eod
 };
 
-static const char qt_meta_stringdata_L_TAB[] = {
-    "L_TAB\0\0on_pushButton_clicked()\0"
+static const char qt_meta_stringdata_Enter[] = {
+    "Enter\0\0enter_bd()\0"
 };
 
-const QMetaObject L_TAB::staticMetaObject = {
-    { &QDialog::staticMetaObject, qt_meta_stringdata_L_TAB,
-      qt_meta_data_L_TAB, 0 }
+const QMetaObject Enter::staticMetaObject = {
+    { &QDialog::staticMetaObject, qt_meta_stringdata_Enter,
+      qt_meta_data_Enter, 0 }
 };
 
 #ifdef Q_NO_DATA_RELOCATION
-const QMetaObject &L_TAB::getStaticMetaObject() { return staticMetaObject; }
+const QMetaObject &Enter::getStaticMetaObject() { return staticMetaObject; }
 #endif //Q_NO_DATA_RELOCATION
 
-const QMetaObject *L_TAB::metaObject() const
+const QMetaObject *Enter::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->metaObject : &staticMetaObject;
 }
 
-void *L_TAB::qt_metacast(const char *_clname)
+void *Enter::qt_metacast(const char *_clname)
 {
     if (!_clname) return 0;
-    if (!strcmp(_clname, qt_meta_stringdata_L_TAB))
-        return static_cast<void*>(const_cast< L_TAB*>(this));
-    if (!strcmp(_clname, "Ui::tab"))
-        return static_cast< Ui::tab*>(const_cast< L_TAB*>(this));
+    if (!strcmp(_clname, qt_meta_stringdata_Enter))
+        return static_cast<void*>(const_cast< Enter*>(this));
+    if (!strcmp(_clname, "Ui::Form"))
+        return static_cast< Ui::Form*>(const_cast< Enter*>(this));
     return QDialog::qt_metacast(_clname);
 }
 
-int L_TAB::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int Enter::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QDialog::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
-        case 0: on_pushButton_clicked(); break;
+        case 0: enter_bd(); break;
         default: ;
         }
         _id -= 1;

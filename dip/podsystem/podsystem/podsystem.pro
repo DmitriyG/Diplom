@@ -16,13 +16,16 @@ LIBS+= C:/PSQL/lib/libpq.lib
 SOURCES += main.cpp\
         mainwindow.cpp \
     enter.cpp \
-    tab.cpp
+    tab.cpp \
+    pole.cpp
 
 HEADERS  += mainwindow.h \
     enter.h \
-    tab.h
+    tab.h \
+    pole.h
 
 FORMS    += mainwindow.ui \
     enter.ui \
     tab.ui \
-    tab.ui
+    tab.ui \
+    pole.ui
