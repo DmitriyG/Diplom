@@ -10,9 +10,6 @@ class  L_TAB : public QDialog, public Ui::tab
     Q_OBJECT
 public:
     L_TAB(QWidget *parent = 0);
-//private slots:
-//    void on_lineEdit_textChanged();
-
 private slots:
     void on_pushButton_clicked();
 };

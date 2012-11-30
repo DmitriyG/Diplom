@@ -6,15 +6,11 @@
 #include <QSqlQueryModel>
 #include <QLineEdit>
 #include <QtSql>
- #include <QDialog>
+#include <QDialog>
 #include <QSqlDatabase>
-
-
-#include <QMainWindow>
 
 namespace Ui {
     class MainWindow;
-
 }
 
 class MainWindow : public QMainWindow
@@ -22,17 +18,12 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-
      MainWindow(QWidget *parent = 0);
     ~MainWindow();
-Ui::MainWindow *ui;
+     Ui::MainWindow *ui;
 private:
-
-    QSqlTableModel* model;
-    QTableView *view;
-
-
-
+     QSqlTableModel* model;
+     QTableView *view;
 public slots:
     void tab();
     void pole();

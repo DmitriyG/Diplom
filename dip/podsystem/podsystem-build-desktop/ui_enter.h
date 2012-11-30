@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'enter.ui'
 **
-** Created: Sun 25. Nov 22:12:35 2012
+** Created: Fri 30. Nov 00:33:27 2012
 **      by: Qt User Interface Compiler version 4.7.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!

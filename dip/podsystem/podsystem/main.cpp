@@ -37,7 +37,6 @@ int main(int argc, char *argv[])
           qDebug() << QApplication::libraryPaths();
           return -1;
       } else {
-     //   main.ui->tableView->maximumSize(main.size());
         main.show();
         }
     return app.exec();

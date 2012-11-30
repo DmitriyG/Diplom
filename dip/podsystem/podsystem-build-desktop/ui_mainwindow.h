@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created: Sun 25. Nov 22:12:35 2012
+** Created: Fri 30. Nov 10:47:25 2012
 **      by: Qt User Interface Compiler version 4.7.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -89,7 +89,7 @@ public:
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 437, 21));
+        menuBar->setGeometry(QRect(0, 0, 437, 20));
         menuFile = new QMenu(menuBar);
         menuFile->setObjectName(QString::fromUtf8("menuFile"));
         MainWindow->setMenuBar(menuBar);
@@ -101,8 +101,8 @@ public:
         MainWindow->setStatusBar(statusBar);
 
         menuBar->addAction(menuFile->menuAction());
-        menuFile->addAction(action);
         menuFile->addAction(action_2);
+        menuFile->addAction(action);
 
         retranslateUi(MainWindow);
 
@@ -112,7 +112,7 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", 0, QApplication::UnicodeUTF8));
-        action->setText(QApplication::translate("MainWindow", "\320\222\321\213\320\261\320\276\321\200 \321\202\320\260\320\261\320\273\320\270\321\206", 0, QApplication::UnicodeUTF8));
+        action->setText(QApplication::translate("MainWindow", "\320\237\321\200\320\276\321\201\320\274\320\276\321\202\321\200 \321\202\320\260\320\261\320\273\320\270\321\206\321\213 \320\275\320\260\321\201\321\202\321\200\320\276\320\265\320\272", 0, QApplication::UnicodeUTF8));
         action_2->setText(QApplication::translate("MainWindow", "\320\222\321\213\320\261\320\276\321\200 \320\277\320\276\320\273\320\265\320\271", 0, QApplication::UnicodeUTF8));
         menuFile->setTitle(QApplication::translate("MainWindow", "\320\235\320\260\321\201\321\202\321\200\320\276\320\271\320\272\320\260", 0, QApplication::UnicodeUTF8));
     } // retranslateUi

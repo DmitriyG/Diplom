@@ -21,24 +21,23 @@ MainWindow::MainWindow(QWidget *parent) :
     connect(ui->action_2,SIGNAL(triggered()), this, SLOT(pole()));
 }
 
-
 void MainWindow::tab()
 {
    QSqlQueryModel *model = new QSqlQueryModel();
-   model->setQuery("SELECT tablename FROM pg_tables WHERE tablename NOT LIKE 'pg\\_%' AND tablename NOT LIKE 'sql\\_%'");
-
+   model->setQuery("SELECT * FROM settings");
    L_TAB *dialog = new L_TAB;
    dialog->tableView->setModel(model);
    dialog->tableView->horizontalHeader()->setResizeMode( QHeaderView::Stretch );
+   dialog->tableView->setSelectionBehavior(QAbstractItemView::SelectRows);
    dialog->show();
 }
 
 void MainWindow::pole()
 {
    QSqlQueryModel *model = new QSqlQueryModel();
-   model->setQuery("SELECT attname FROM pg_attribute, pg_type WHERE typname = 'jilci' AND attrelid = typrelid AND attname NOT IN ('cmin', 'cmax', 'ctid', 'oid', 'tableoid', 'xmin', 'xmax')");
+   model->setQuery("SELECT tablename FROM pg_tables WHERE tablename NOT LIKE 'pg\\_%' AND tablename NOT LIKE 'sql\\_%' AND tablename NOT LIKE 'logs' AND tablename NOT LIKE 'settings'");
    Pole *dialog = new Pole;
-   dialog->listView->setModel(model);
+   dialog->comboBox->setModel(model);
    dialog->show();
 }
 
