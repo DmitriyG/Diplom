@@ -79,7 +79,7 @@ void Pole::on_pushButton_clicked()
     //construct strings for trig fun---<<
     //generete trig fun & trig--->>
     model->setQuery(
-            // qDebug() <<(
+           // qDebug() <<(
              "CREATE OR REPLACE FUNCTION add_to_log() RETURNS TRIGGER AS $$ "
              "DECLARE "
              "mstr varchar(30);"
@@ -89,7 +89,7 @@ void Pole::on_pushButton_clicked()
              " BEGIN "
              " IF TG_OP = 'INSERT' THEN "
              +tmp_n
-             +"mstr := 'Add new ';"
+             +"mstr := ' Add new ';"
              "retstr := ' ';"
              +tmp_str_n
              +"INSERT INTO logs(text,added) values (retstr,NOW());"
@@ -104,7 +104,7 @@ void Pole::on_pushButton_clicked()
              " RETURN NEW;"
              "ELSIF TG_OP = 'DELETE' THEN "
              +tmp_o
-             +"mstr := 'Remove ';"
+             +"mstr := ' Remove ';"
              "retstr := ' ';"
              +tmp_str_o
              +"INSERT INTO logs(text,added) values (retstr,NOW());"
