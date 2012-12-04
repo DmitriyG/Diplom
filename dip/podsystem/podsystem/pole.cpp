@@ -14,7 +14,7 @@ void Pole::on_pushButton_clicked()
     QStringList list;
     QModelIndexList mlist = listView->selectionModel()->selectedIndexes();
     QString list_pole;
-    QString tmp_n, tmp_o,tmp_d,tmp_str,tmp_str_n,tmp_str_o,tmp_str_u,tmp_if;
+    QString tmp_n, tmp_o,tmp_d,tmp_str,tmp_str_n,tmp_str_o,tmp_str_u,tmp_if,tmp_if_1,tmp_if_2;
     QSqlQueryModel *model = new QSqlQueryModel();
 
     for(int i = 0;i < mlist.count();i++){
@@ -38,26 +38,32 @@ void Pole::on_pushButton_clicked()
         for(int i = 0;i < list.count();i++){
         QString ii=QString::number(i);
         tmp_d = tmp_d
-                +"astr_"
+                +" astr_"
                 +ii
                 +" varchar(100);"
-                +"astr_o_"
+                +" astr_o_"
                 +ii
                 +" varchar(100);";
         tmp_n = tmp_n
-                +"astr_"
+                +" astr_"
                 +ii
                 +"= NEW."+list.at(i)+";";
         tmp_o = tmp_o
-                +"astr_o_"
+                +" astr_o_"
                 +ii
                 +"= OLD."+list.at(i)+";";
-        tmp_str_n = tmp_str_n + tmp_str +";"+ " retstr := retstr || astr_"
+        tmp_if_1 = " if NEW."
+                   +list.at(i)+
+                   +" is not null then ";
+        tmp_str_n = tmp_str_n + tmp_if_1+ tmp_str +";"+ " retstr := retstr || astr_"
                     + ii
-                    + ";";
-        tmp_str_o = tmp_str_o + tmp_str +";"+ " retstr := retstr || astr_o_"
+                    + "; end if;";
+        tmp_if_2 = " if OLD."
+                   +list.at(i)+
+                   +" is not null then ";
+        tmp_str_o = tmp_str_o +tmp_if_2+ tmp_str +";"+ " retstr := retstr || astr_o_"
                     + ii
-                    + ";";
+                    + "; end if;";
         tmp_if = "if (astr_"
                  +ii
                  +"<>"
@@ -84,10 +90,11 @@ void Pole::on_pushButton_clicked()
              "DECLARE "
              "mstr varchar(30);"
              +tmp_d
-             +"tab varchar(100);"
+             +"tab text;"
              "retstr varchar(254);"
              " BEGIN "
              " IF TG_OP = 'INSERT' THEN "
+             "tab='';"
              +tmp_n
              +"mstr := ' Add new ';"
              "retstr := ' ';"
