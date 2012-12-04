@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'pole.ui'
 **
-** Created: Fri 30. Nov 01:17:21 2012
+** Created: Mon 3. Dec 04:02:52 2012
 **      by: Qt User Interface Compiler version 4.7.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -37,19 +37,20 @@ public:
     QListView *listView;
     QLabel *label;
     QLabel *label_2;
+    QLabel *label_3;
 
     void setupUi(QDialog *pole)
     {
         if (pole->objectName().isEmpty())
             pole->setObjectName(QString::fromUtf8("pole"));
         pole->setWindowModality(Qt::WindowModal);
-        pole->resize(163, 316);
+        pole->resize(163, 358);
         comboBox = new QComboBox(pole);
         comboBox->setObjectName(QString::fromUtf8("comboBox"));
         comboBox->setGeometry(QRect(10, 30, 141, 22));
         layoutWidget = new QWidget(pole);
         layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
-        layoutWidget->setGeometry(QRect(10, 270, 141, 31));
+        layoutWidget->setGeometry(QRect(10, 310, 141, 31));
         horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
@@ -64,7 +65,7 @@ public:
 
         listView = new QListView(pole);
         listView->setObjectName(QString::fromUtf8("listView"));
-        listView->setGeometry(QRect(10, 90, 141, 161));
+        listView->setGeometry(QRect(10, 90, 140, 160));
         QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
@@ -81,6 +82,10 @@ public:
         label_2->setObjectName(QString::fromUtf8("label_2"));
         label_2->setGeometry(QRect(10, 60, 111, 16));
         label_2->setFont(font);
+        label_3 = new QLabel(pole);
+        label_3->setObjectName(QString::fromUtf8("label_3"));
+        label_3->setGeometry(QRect(10, 270, 111, 16));
+        label_3->setFont(font);
 
         retranslateUi(pole);
 
@@ -93,6 +98,7 @@ public:
         pushButton->setText(QApplication::translate("pole", "Add", 0, QApplication::UnicodeUTF8));
         label->setText(QApplication::translate("pole", "\320\222\321\213\320\261\320\276\321\200 \320\242\320\260\320\261\320\273\320\270\321\206\321\213:", 0, QApplication::UnicodeUTF8));
         label_2->setText(QApplication::translate("pole", "\320\222\321\213\320\261\320\276\321\200 \320\237\320\276\320\273\320\265\320\271:", 0, QApplication::UnicodeUTF8));
+        label_3->setText(QApplication::translate("pole", "ops", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };
