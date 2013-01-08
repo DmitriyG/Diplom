@@ -14,8 +14,11 @@ void Pole::on_pushButton_clicked()
     QStringList list;
     QModelIndexList mlist = listView->selectionModel()->selectedIndexes();
     QString list_pole;
-    QString tmp_n, tmp_o,tmp_d,tmp_str,tmp_str_n,tmp_str_o,tmp_str_u,tmp_if,tmp_if_1,tmp_if_2;
+    QString tmp_n, tmp_o,tmp_d,tmp_str,tmp_str_n,
+            tmp_str_o,tmp_str_u,tmp_if,tmp_if_1,tmp_if_2, sel_com,str_com;
     QSqlQueryModel *model = new QSqlQueryModel();
+    QTextCodec::setCodecForTr(QTextCodec::codecForName("CP1251"));
+    // установка кириллицы
 
     for(int i = 0;i < mlist.count();i++){
     //Получаем отображаемое имя
@@ -33,7 +36,14 @@ void Pole::on_pushButton_clicked()
                      +list_pole
                      +"')");
     //construct strings for trig fun--->>
-    tmp_str= "retstr := retstr || mstr";
+    tmp_str = "retstr := retstr || mstr; ";
+    sel_com = "tmp=(select description from pg_description "
+              "join pg_class on pg_description.objoid = pg_class.oid "
+              "where relname = '"
+              +comboBox->currentText()
+              +"' and objsubid = ";
+    str_com = "retstr := retstr || tmp; retstr := retstr || ' ';";
+
     if (list.count()>0){
         for(int i = 0;i < list.count();i++){
         QString ii=QString::number(i);
@@ -55,13 +65,19 @@ void Pole::on_pushButton_clicked()
         tmp_if_1 = " if NEW."
                    +list.at(i)+
                    +" is not null then ";
-        tmp_str_n = tmp_str_n + tmp_if_1+ tmp_str +";"+ " retstr := retstr || astr_"
+        tmp_str_n = tmp_str_n + tmp_if_1+ tmp_str + sel_com + QString::number(mlist.at(i).row()+1)
+                    + ");  if tmp is not null then "
+                    + str_com
+                    + " end if; retstr := retstr || astr_"
                     + ii
                     + "; end if;";
         tmp_if_2 = " if OLD."
                    +list.at(i)+
                    +" is not null then ";
-        tmp_str_o = tmp_str_o +tmp_if_2+ tmp_str +";"+ " retstr := retstr || astr_o_"
+        tmp_str_o = tmp_str_o + tmp_if_2+ tmp_str + sel_com + QString::number(mlist.at(i).row()+1)
+                    + ");  if tmp is not null then "
+                    + str_com
+                    + " end if; retstr := retstr || astr_o_"
                     + ii
                     + "; end if;";
         tmp_if = "if (astr_"
@@ -70,33 +86,35 @@ void Pole::on_pushButton_clicked()
                  +"astr_o_"
                  +ii
                  +") then ";
-        tmp_str_u = tmp_str_u + tmp_if + tmp_str
-                    + ";"
-                    + " retstr := retstr || astr_"
+        tmp_str_u = tmp_str_u + tmp_if + tmp_str + sel_com + QString::number(mlist.at(i).row()+1)
+                    + ");  if tmp is not null then "
+                    + str_com
+                    + " end if; retstr := retstr || '"+tr("с ")+"';"
+                    + " retstr := retstr || astr_o_"
                     + ii
                     + ";"
-                    + " retstr := retstr || ' from ';"
-                    + " retstr := retstr || astr_o_"
+                    + " retstr := retstr || '"+tr(" на ")+"';"
+                    + " retstr := retstr || astr_"
                     + ii
                     + ";"
                     + "end if;";
         }
-    }
+    }//??? вывод имени поля, запись по-умолчанию setcomment.sql, доавление своих комментов
     //construct strings for trig fun---<<
     //generete trig fun & trig--->>
+
     model->setQuery(
-           // qDebug() <<(
+         //  qDebug() <<(
              "CREATE OR REPLACE FUNCTION add_to_log() RETURNS TRIGGER AS $$ "
              "DECLARE "
              "mstr varchar(30);"
              +tmp_d
-             +"tab text;"
+             +"tmp varchar(30);"
              "retstr varchar(254);"
              " BEGIN "
-             " IF TG_OP = 'INSERT' THEN "
-             "tab='';"
+             " IF TG_OP = 'INSERT' THEN "             
              +tmp_n
-             +"mstr := ' Add new ';"
+             +"mstr := '"+tr(" Добавление нового: ")+"';"
              "retstr := ' ';"
              +tmp_str_n
              +"INSERT INTO logs(text,added) values (retstr,NOW());"
@@ -104,14 +122,14 @@ void Pole::on_pushButton_clicked()
              "ELSIF TG_OP = 'UPDATE' THEN "
              +tmp_n
              +tmp_o
-             +"mstr := ' Update to ';"
+             +"mstr := '"+tr(" Изменение: ")+"';"
              "retstr := ' ';"
              +tmp_str_u
              +"INSERT INTO logs(text,added) values (retstr,NOW());"
              " RETURN NEW;"
              "ELSIF TG_OP = 'DELETE' THEN "
              +tmp_o
-             +"mstr := ' Remove ';"
+             +"mstr := '"+tr(" Удаление: ")+"';"
              "retstr := ' ';"
              +tmp_str_o
              +"INSERT INTO logs(text,added) values (retstr,NOW());"
@@ -135,4 +153,6 @@ void Pole::on_comboBox_currentIndexChanged(QString )
                     +comboBox->currentText()
                     +"' AND attrelid = typrelid AND attname NOT IN ('cmin', 'cmax', 'ctid', 'oid', 'tableoid', 'xmin', 'xmax')");
     listView->setModel(model);
+    listView->setItemDelegate(new MyItemDelegate(this));
+
 }

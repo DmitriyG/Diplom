@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'enter.ui'
 **
-** Created: Thu 15. Nov 00:50:01 2012
+** Created: Wed 5. Dec 05:09:58 2012
 **      by: Qt User Interface Compiler version 4.7.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -109,8 +109,8 @@ public:
     void retranslateUi(QWidget *Form)
     {
         Form->setWindowTitle(QApplication::translate("Form", "Enter", 0, QApplication::UnicodeUTF8));
-        label->setText(QApplication::translate("Form", "Name:", 0, QApplication::UnicodeUTF8));
-        label_2->setText(QApplication::translate("Form", "Password:", 0, QApplication::UnicodeUTF8));
+        label->setText(QApplication::translate("Form", "\320\230\320\274\321\217:", 0, QApplication::UnicodeUTF8));
+        label_2->setText(QApplication::translate("Form", "\320\237\320\260\321\200\320\276\320\273\321\214:", 0, QApplication::UnicodeUTF8));
         lineEdit_2->setText(QString());
         okButton->setText(QApplication::translate("Form", "OK", 0, QApplication::UnicodeUTF8));
     } // retranslateUi

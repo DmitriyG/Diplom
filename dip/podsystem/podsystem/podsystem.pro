@@ -27,5 +27,4 @@ HEADERS  += mainwindow.h \
 FORMS    += mainwindow.ui \
     enter.ui \
     tab.ui \
-    tab.ui \
     pole.ui

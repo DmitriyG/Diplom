@@ -29,4 +29,16 @@ public slots:
     void pole();
 };
 
+class MyItemDelegate: public QItemDelegate
+{
+public:
+        MyItemDelegate(QObject * parent) : QItemDelegate(parent) {}
+
+        QSize sizeHint(const QStyleOptionViewItem& option, const QModelIndex & index) const
+        {
+                QSize newSize = QItemDelegate::sizeHint(option, index);
+                newSize.setHeight(20); // ”станавливаем любую высоту строки, например 30
+                return newSize;
+        }
+};
 #endif // MAINWINDOW_H

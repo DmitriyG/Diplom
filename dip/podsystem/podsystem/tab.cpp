@@ -22,4 +22,5 @@ void L_TAB::on_pushButton_clicked()
                        +"'");
     model->setQuery("SELECT * FROM settings");
     tableView->setModel(model);
+
 }
