@@ -41,11 +41,14 @@ void MainWindow::pole()
    Pole *dialog = new Pole;
    dialog->comboBox->setModel(model);
    dialog->comboBox->setItemDelegate(new MyItemDelegate(this));
+   dialog->tableWidget->setItemDelegate(new MyItemDelegate(this));
+   dialog->tableWidget->horizontalHeader()->setResizeMode(QHeaderView::Stretch );
    dialog->show();
 }
 
 MainWindow::~MainWindow()
 {
+
     delete ui;
 }
 

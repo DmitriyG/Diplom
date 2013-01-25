@@ -37,7 +37,7 @@ public:
         QSize sizeHint(const QStyleOptionViewItem& option, const QModelIndex & index) const
         {
                 QSize newSize = QItemDelegate::sizeHint(option, index);
-                newSize.setHeight(20); // ”станавливаем любую высоту строки, например 30
+                newSize.setHeight(25); // ”станавливаем любую высоту строки, например 30
                 return newSize;
         }
 };

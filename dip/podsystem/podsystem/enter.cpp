@@ -12,7 +12,8 @@ void Enter::enter_bd()
 {
     st_e1 = lineEdit->text();
     st_e2 = lineEdit_2->text();
-    Enter::close();
+   // Enter::close();
+    this->close();
 }
 
 Enter::~Enter()

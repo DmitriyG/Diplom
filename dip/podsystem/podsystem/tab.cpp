@@ -17,10 +17,12 @@ void L_TAB::on_pushButton_clicked()
     QModelIndex index = tableView->currentIndex();
     QSqlRecord record;
     record = model->record(index.row());
-    model->setQuery ("DELETE FROM settings WHERE table_name = '"
-                       +record.value("table_name").toString()
-                       +"'");
+    model->setQuery("DELETE FROM settings WHERE table_name = '"
+                    +record.value("table_name").toString()
+                    +"'");
+    model->setQuery("DROP FUNCTION add_to_log_"
+                    +record.value("table_name").toString()
+                    +"() CASCADE");
     model->setQuery("SELECT * FROM settings");
     tableView->setModel(model);
-
 }

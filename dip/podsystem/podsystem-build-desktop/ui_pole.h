@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'pole.ui'
 **
-** Created: Tue 11. Dec 23:32:58 2012
+** Created: Sat 26. Jan 01:40:37 2013
 **      by: Qt User Interface Compiler version 4.7.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
@@ -16,85 +16,117 @@
 #include <QtGui/QButtonGroup>
 #include <QtGui/QComboBox>
 #include <QtGui/QDialog>
+#include <QtGui/QGridLayout>
 #include <QtGui/QHBoxLayout>
 #include <QtGui/QHeaderView>
 #include <QtGui/QLabel>
-#include <QtGui/QLineEdit>
-#include <QtGui/QListView>
 #include <QtGui/QPushButton>
-#include <QtGui/QSpacerItem>
-#include <QtGui/QWidget>
+#include <QtGui/QTableWidget>
+#include <QtGui/QVBoxLayout>
 
 QT_BEGIN_NAMESPACE
 
 class Ui_pole
 {
 public:
-    QLineEdit *lineEdit;
+    QVBoxLayout *verticalLayout;
+    QGridLayout *gridLayout;
     QLabel *label;
-    QComboBox *comboBox;
-    QLabel *label_2;
-    QListView *listView;
-    QWidget *widget;
     QHBoxLayout *horizontalLayout;
-    QSpacerItem *horizontalSpacer;
+    QComboBox *comboBox;
     QPushButton *pushButton;
+    QTableWidget *tableWidget;
 
     void setupUi(QDialog *pole)
     {
         if (pole->objectName().isEmpty())
             pole->setObjectName(QString::fromUtf8("pole"));
-        pole->setWindowModality(Qt::WindowModal);
+        pole->setWindowModality(Qt::ApplicationModal);
         pole->setEnabled(true);
-        pole->resize(289, 390);
-        pole->setModal(true);
-        lineEdit = new QLineEdit(pole);
-        lineEdit->setObjectName(QString::fromUtf8("lineEdit"));
-        lineEdit->setGeometry(QRect(170, 80, 113, 20));
-        QFont font;
-        font.setPointSize(10);
-        lineEdit->setFont(font);
-        label = new QLabel(pole);
-        label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(10, 10, 98, 16));
-        label->setFont(font);
-        comboBox = new QComboBox(pole);
-        comboBox->setObjectName(QString::fromUtf8("comboBox"));
-        comboBox->setGeometry(QRect(10, 32, 69, 20));
-        label_2 = new QLabel(pole);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
-        label_2->setGeometry(QRect(10, 58, 82, 16));
-        label_2->setFont(font);
-        listView = new QListView(pole);
-        listView->setObjectName(QString::fromUtf8("listView"));
-        listView->setGeometry(QRect(10, 80, 157, 217));
-        QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+        pole->resize(274, 308);
+        QSizePolicy sizePolicy(QSizePolicy::Fixed, QSizePolicy::Fixed);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
-        sizePolicy.setHeightForWidth(listView->sizePolicy().hasHeightForWidth());
-        listView->setSizePolicy(sizePolicy);
-        QFont font1;
-        font1.setPointSize(8);
-        listView->setFont(font1);
-        listView->setLineWidth(1);
-        listView->setSelectionMode(QAbstractItemView::MultiSelection);
-        listView->setResizeMode(QListView::Fixed);
-        listView->setLayoutMode(QListView::SinglePass);
-        listView->setBatchSize(500);
-        widget = new QWidget(pole);
-        widget->setObjectName(QString::fromUtf8("widget"));
-        widget->setGeometry(QRect(21, 341, 123, 25));
-        horizontalLayout = new QHBoxLayout(widget);
+        sizePolicy.setHeightForWidth(pole->sizePolicy().hasHeightForWidth());
+        pole->setSizePolicy(sizePolicy);
+        QPalette palette;
+        QBrush brush(QColor(255, 255, 255, 255));
+        brush.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::Midlight, brush);
+        QBrush brush1(QColor(240, 240, 240, 255));
+        brush1.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Active, QPalette::Base, brush1);
+        palette.setBrush(QPalette::Active, QPalette::Window, brush1);
+        QBrush brush2(QColor(227, 227, 227, 255));
+        brush2.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Inactive, QPalette::Midlight, brush2);
+        palette.setBrush(QPalette::Inactive, QPalette::Base, brush1);
+        palette.setBrush(QPalette::Inactive, QPalette::Window, brush1);
+        QBrush brush3(QColor(247, 247, 247, 255));
+        brush3.setStyle(Qt::SolidPattern);
+        palette.setBrush(QPalette::Disabled, QPalette::Midlight, brush3);
+        palette.setBrush(QPalette::Disabled, QPalette::Base, brush1);
+        palette.setBrush(QPalette::Disabled, QPalette::Window, brush1);
+        pole->setPalette(palette);
+        pole->setModal(true);
+        verticalLayout = new QVBoxLayout(pole);
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        gridLayout = new QGridLayout();
+        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
+        label = new QLabel(pole);
+        label->setObjectName(QString::fromUtf8("label"));
+        QSizePolicy sizePolicy1(QSizePolicy::Preferred, QSizePolicy::Preferred);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(label->sizePolicy().hasHeightForWidth());
+        label->setSizePolicy(sizePolicy1);
+        QFont font;
+        font.setPointSize(10);
+        label->setFont(font);
+
+        gridLayout->addWidget(label, 0, 0, 1, 1);
+
+        horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
-        horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+        comboBox = new QComboBox(pole);
+        comboBox->setObjectName(QString::fromUtf8("comboBox"));
+        sizePolicy1.setHeightForWidth(comboBox->sizePolicy().hasHeightForWidth());
+        comboBox->setSizePolicy(sizePolicy1);
+        QFont font1;
+        font1.setFamily(QString::fromUtf8("Segoe UI"));
+        comboBox->setFont(font1);
 
-        horizontalLayout->addItem(horizontalSpacer);
+        horizontalLayout->addWidget(comboBox);
 
-        pushButton = new QPushButton(widget);
+        pushButton = new QPushButton(pole);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        sizePolicy1.setHeightForWidth(pushButton->sizePolicy().hasHeightForWidth());
+        pushButton->setSizePolicy(sizePolicy1);
 
         horizontalLayout->addWidget(pushButton);
+
+
+        gridLayout->addLayout(horizontalLayout, 1, 0, 1, 1);
+
+
+        verticalLayout->addLayout(gridLayout);
+
+        tableWidget = new QTableWidget(pole);
+        if (tableWidget->columnCount() < 2)
+            tableWidget->setColumnCount(2);
+        tableWidget->setObjectName(QString::fromUtf8("tableWidget"));
+        tableWidget->setFrameShape(QFrame::HLine);
+        tableWidget->setFrameShadow(QFrame::Sunken);
+        tableWidget->setLineWidth(0);
+        tableWidget->setVerticalScrollBarPolicy(Qt::ScrollBarAsNeeded);
+        tableWidget->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+        tableWidget->setEditTriggers(QAbstractItemView::CurrentChanged|QAbstractItemView::EditKeyPressed|QAbstractItemView::SelectedClicked);
+        tableWidget->setGridStyle(Qt::NoPen);
+        tableWidget->setSortingEnabled(false);
+        tableWidget->setRowCount(0);
+        tableWidget->setColumnCount(2);
+
+        verticalLayout->addWidget(tableWidget);
 
 
         retranslateUi(pole);
@@ -106,8 +138,7 @@ public:
     {
         pole->setWindowTitle(QApplication::translate("pole", "\320\222\321\213\320\261\320\276\321\200 \320\277\320\276\320\273\320\265\320\271", 0, QApplication::UnicodeUTF8));
         label->setText(QApplication::translate("pole", "\320\222\321\213\320\261\320\276\321\200 \320\242\320\260\320\261\320\273\320\270\321\206\321\213:", 0, QApplication::UnicodeUTF8));
-        label_2->setText(QApplication::translate("pole", "\320\222\321\213\320\261\320\276\321\200 \320\237\320\276\320\273\320\265\320\271:", 0, QApplication::UnicodeUTF8));
-        pushButton->setText(QApplication::translate("pole", "Add", 0, QApplication::UnicodeUTF8));
+        pushButton->setText(QApplication::translate("pole", "\320\241\320\276\320\267\320\264\320\260\321\202\321\214 \321\202\321\200\320\270\320\263\320\263\320\265\321\200", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };
