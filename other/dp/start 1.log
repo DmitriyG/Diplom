@@ -1,0 +1,588 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdflatex 2011.12.17)  1 FEB 2013 17:39
+entering extended mode
+**C:/Users/Р”РёРјР°/Desktop/dp/start*1.tex
+("C:/Users/Р”РёРјР°/Desktop/dp/start 1.tex"
+LaTeX2e <2011/06/27>
+Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
+abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
+croatian, czech, danish, dutch, esperanto, estonian, farsi, finnish, french, ga
+lician, german, german-x-2009-06-19, greek, gujarati, hindi, hungarian, iceland
+ic, indonesian, interlingua, irish, italian, kannada, kurmanji, lao, latin, lat
+vian, lithuanian, malayalam, marathi, mongolian, mongolianlmc, monogreek, ngerm
+an, ngerman-x-2009-06-19, nynorsk, oriya, panjabi, pinyin, polish, portuguese, 
+romanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, swis
+sgerman, tamil, telugu, turkish, turkmen, ukenglish, ukrainian, uppersorbian, u
+senglishmax, welsh, loaded.
+("C:\Program Files (x86)\_Full_TeX\texmf\tex\latex\base\article.cls"
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+("C:\Program Files (x86)\_Full_TeX\texmf\tex\latex\base\size12.clo"
+File: size12.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+("C:\Program Files (x86)\_Full_TeX\texmf\tex\latex\russ\russ.sty"
+Package: russ 2008/02/27 Russian language
+
+("C:\Program Files (x86)\_Full_TeX\texmf\tex\latex\base\inputenc.sty"
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks14
+\inpenc@posthook=\toks15
+
+("C:\Program Files (x86)\_Full_TeX\texmf\tex\latex\cyrillic\cp1251.def"
+File: cp1251.def 1999/11/16 v1.0d Input encoding file
+))
+("C:\Program Files (x86)\_Full_TeX\texmf\tex\latex\cyrillic\t2aenc.def"
+File: t2aenc.def 2005/09/27 v1.0i Cyrillic encoding definition file
+)
+LaTeX Font Info:    Try loading font information for T2A+cmr on input line 21.
+
+("C:\Program Files (x86)\_Full_TeX\texmf\tex\latex\cyrillic\t2acmr.fd"
+File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
+)
+\symrletters=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `rletters' in version `bold'
+(Font)                  T2A/cmr/m/it --> T2A/cmr/b/it on input line 77.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  OT1/cmr/m/n --> T2A/cmr/m/n on input line 151.
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
+(Font)                  OT1/cmr/bx/n --> T2A/cmr/b/n on input line 152.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> T2A/cmr/m/it on input line 153.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> T2A/cmr/b/it on input line 154.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> T2A/cmr/b/n on input line 155.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> T2A/cmr/b/n on input line 156.
+
+
+ Correcting math definitions,
+\symAMSa=\mathgroup5
+\symAMSb=\mathgroup6
+ heading names, counters, lists,
+\c@rlistctr=\count87
+ headings,
+captions, theorems, running heads, appendix, \cleardoublepage, quotes,
+... finished.
+LaTeX Info: Redefining \ч on input line 675.
+)
+("C:\Program Files (x86)\_Full_TeX\texmf\tex\latex\geometry\geometry.sty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+("C:\Program Files (x86)\_Full_TeX\texmf\tex\latex\graphics\keyval.sty"
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+("C:\Program Files (x86)\_Full_TeX\texmf\tex\generic\oberdiek\ifpdf.sty"
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is detected.
+)
+("C:\Program Files (x86)\_Full_TeX\texmf\tex\generic\oberdiek\ifvtex.sty"
+Package: ifvtex 2010/03/01 v1.5 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+("C:\Program Files (x86)\_Full_TeX\texmf\tex\generic\ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count88
+\Gm@cntv=\count89
+\c@Gm@tempcnt=\count90
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks17
+
+("C:\Program Files (x86)\_Full_TeX\texmf\tex\latex\geometry\geometry.cfg"))
+("C:\Program Files (x86)\_Full_TeX\texmf\tex\latex\tools\longtable.sty"
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip43
+\LTright=\skip44
+\LTpre=\skip45
+\LTpost=\skip46
+\LTchunksize=\count91
+\LTcapwidth=\dimen111
+\LT@head=\box26
+\LT@firsthead=\box27
+\LT@foot=\box28
+\LT@lastfoot=\box29
+\LT@cols=\count92
+\LT@rows=\count93
+\c@LT@tables=\count94
+\c@LT@chunks=\count95
+\LT@p@ftn=\toks18
+)
+("C:\Program Files (x86)\_Full_TeX\texmf\tex\latex\graphics\lscape.sty"
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+
+("C:\Program Files (x86)\_Full_TeX\texmf\tex\latex\graphics\graphics.sty"
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+("C:\Program Files (x86)\_Full_TeX\texmf\tex\latex\graphics\trig.sty"
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+("C:\Program Files (x86)\_Full_TeX\texmf\tex\latex\00miktex\graphics.cfg"
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+("C:\Program Files (x86)\_Full_TeX\texmf\tex\latex\pdftex-def\pdftex.def"
+File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
+
+("C:\Program Files (x86)\_Full_TeX\texmf\tex\generic\oberdiek\infwarerr.sty"
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
+)
+("C:\Program Files (x86)\_Full_TeX\texmf\tex\generic\oberdiek\ltxcmds.sty"
+Package: ltxcmds 2011/04/18 v1.20 LaTeX kernel commands for general use (HO)
+)
+\Gread@gobject=\count96
+)))
+("C:\Users\Р”РёРјР°\Desktop\dp\start 1.aux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=483.69687pt
+* \textheight=731.23584pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-52.36449pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+("C:\Program Files (x86)\_Full_TeX\texmf\tex\context\base\supp-pdf.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count97
+\scratchdimen=\dimen112
+\scratchbox=\box30
+\nofMPsegments=\count98
+\nofMParguments=\count99
+\everyMPshowfont=\toks19
+\MPscratchCnt=\count100
+\MPscratchDim=\dimen113
+\MPnumerator=\count101
+\makeMPintoPDFobject=\count102
+\everyMPtoPDFconversion=\toks20
+)
+Overfull \hbox (2.17758pt too wide) in paragraph at lines 26--27
+[]\T2A/cmr/m/n/12 3) Дан-ные и ин-фор-ма-ция за-щи-ще-на от несанк-ци-о-ни-ро-в
+ан-но-го из-ме-не-ния (це-лост-ность). 
+ []
+
+[1
+
+{C:/Program Files (x86)/_Full_TeX/texmf/pdftex/config/pdftex.map}]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 56.
+
+("C:\Program Files (x86)\_Full_TeX\texmf\tex\latex\base\omscmr.fd"
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 56.
+ [2]
+[3] [4] [5] [6] [7]
+Underfull \hbox (badness 10000) in paragraph at lines 244--244
+[]|\T2A/cmr/m/n/12 Microsoft SQL
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--246
+[]|\T2A/cmr/m/n/12 Windows
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--246
+[]|\T2A/cmr/m/n/12 Windows
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--246
+\T2A/cmr/m/n/12 Desktop/Server ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
+[]|\T2A/cmr/m/n/12 Windows1
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--247
+\T2A/cmr/m/n/12 Desktop/S22erver,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--249
+[]|\T2A/cmr/m/n/12 Коммерческий
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--249
+\T2A/cmr/m/n/12 тым ис-ход-ным
+ []
+
+
+Underfull \hbox (badness 1009) in paragraph at lines 249--249
+\T2A/cmr/m/n/12 ко-дом. Есть бес-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--249
+\T2A/cmr/m/n/12 плат-ная вер-сия
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--249
+\T2A/cmr/m/n/12 с огра-ни-че-ни-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--249
+\T2A/cmr/m/n/12 ем опе-ра-тив-ной
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--249
+[]|\T2A/cmr/m/n/12 Коммерческая
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--251
+[]|\T2A/cmr/m/n/12 Лицензия BSD
+ []
+
+
+Underfull \hbox (badness 4726) in paragraph at lines 252--252
+[]|\T2A/cmr/m/n/12 Наличие пред-уста-нов-лен-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
+[]|\T2A/cmr/m/n/12 Наличие про-грамм-ных
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--260
+[]|\T2A/cmr/m/n/12 Да (SQL
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 260--260
+\T2A/cmr/m/n/12 Management
+ []
+
+
+Underfull \hbox (badness 6575) in paragraph at lines 260--260
+\T2A/cmr/m/n/12 Studio и Studio
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--263
+[]|\T2A/cmr/m/n/12 Да (на-зы-ва-ют-ся
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--263
+\T2A/cmr/m/n/12 филь-тро-ван-ные
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--265
+[]|\T2A/cmr/m/n/12 Поддержка фун-ци-о-наль-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 267--267
+[]|\T2A/cmr/m/n/12 Поддержка ACID-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--269
+[]|\T2A/cmr/m/n/12 Каскадное об-нов-ле-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--269
+\T2A/cmr/m/n/12 ние/удаление внеш-них
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 271--271
+[]|\T2A/cmr/m/n/12 Внесение дан-ных в
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 273--273
+\T2A/cmr/m/n/12 под-дер-жи-ва-ю-
+ []
+
+
+Underfull \hbox (badness 1137) in paragraph at lines 273--273
+[]|\T2A/cmr/m/n/12 Нет (кро-ме C и
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--275
+[]|\T2A/cmr/m/n/12 Возможность со-зда-вать
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--275
+\T2A/cmr/m/n/12 язык, кро-ме
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--277
+[]|\T2A/cmr/m/n/12 Да  на PL
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--277
+\T2A/cmr/m/n/12 ен-ных C, SQL,
+ []
+
+
+Underfull \hbox (badness 2035) in paragraph at lines 280--280
+[]|\T2A/cmr/m/n/12 Да (в Enterprise
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--282
+[]|\T2A/cmr/m/n/12 Возможность со-зда-вать
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--282
+\T2A/cmr/m/n/12 функ-ции, воз-вра-ща-ю-щие
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 282--282
+\T2A/cmr/m/n/12 ко-то-рые мож-но ис-поль-
+ []
+
+
+Underfull \hbox (badness 4229) in paragraph at lines 282--282
+\T2A/cmr/m/n/12 зо-вать в сек-ции FROM
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 284--284
+[]|\T2A/cmr/m/n/12 Поддержка со-зда-ния
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 286--287
+[]|\T2A/cmr/m/n/12 Да (с по-мо-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 286--287
+\T2A/cmr/m/n/12 щью CREATE
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--290
+[]|\T2A/cmr/m/n/12 Да (SQL
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 290--290
+\T2A/cmr/m/n/12 Management
+ []
+
+
+Underfull \hbox (badness 4266) in paragraph at lines 292--292
+[]|\T2A/cmr/m/n/12 Да (толь-ко для
+ []
+
+
+Underfull \hbox (badness 7759) in paragraph at lines 294--294
+[]|\T2A/cmr/m/n/12 Возможность до-сту-па к
+ []
+
+
+Underfull \hbox (badness 2503) in paragraph at lines 294--294
+\T2A/cmr/m/n/12 таб-ли-це из дру-гой ба-зы
+ []
+
+
+Underfull \hbox (badness 3098) in paragraph at lines 294--294
+\T2A/cmr/m/n/12 дан-ных, на-хо-дя-щей-ся на
+ []
+
+
+Underfull \hbox (badness 1715) in paragraph at lines 298--298
+[]|\T2A/cmr/m/n/12 Да (но без вре-
+ []
+
+
+Underfull \hbox (badness 1888) in paragraph at lines 300--300
+[]|\T2A/cmr/m/n/12 Средставими БД
+ []
+
+
+Underfull \hbox (badness 4569) in paragraph at lines 300--301
+\T2A/cmr/m/n/12 то-дов, вклю-ча-ю-
+ []
+
+
+Underfull \hbox (badness 1297) in paragraph at lines 302--302
+[]|\T2A/cmr/m/n/12 Разграничение до-сту-па к
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 304--304
+[]|\T2A/cmr/m/n/12 Поддержка ре-кур-сив-ных
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 306--306
+[]|\T2A/cmr/m/n/12 Поддержка
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 306--306
+\T2A/cmr/m/n/12 COUNT(DISTINCT),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 312--312
+[]|\T2A/cmr/m/n/12 Поддержка функ-ций
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 314--314
+[]|\T2A/cmr/m/n/12 Поддержка LIMIT ..
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 316--316
+[]|\T2A/cmr/m/n/12 Наличие Advanced
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 316--316
+[]|\T2A/cmr/m/n/12 Да (тех-нол-гия
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 318--318
+[]|\T2A/cmr/m/n/12 Да (тех-нол-гия
+ []
+
+
+Underfull \hbox (badness 6157) in paragraph at lines 324--324
+[]|\T2A/cmr/m/n/12 Производительность пла-
+ []
+
+
+Underfull \hbox (badness 2521) in paragraph at lines 324--324
+\T2A/cmr/m/n/12 ни-ров-щи-ка за-про-сов для
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 324--324
+[]|\T2A/cmr/m/n/12 Средняя (уме-ет
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 324--324
+\T2A/cmr/m/n/12 па-рал-лель-ные
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 324--324
+\T2A/cmr/m/n/12 за-про-сы ѕиз
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 324--325
+[]|\T2A/cmr/m/n/12 Очень хо-ро-шая
+ []
+
+[8]
+Underfull \hbox (badness 2213) in paragraph at lines 326--326
+[]|\T2A/cmr/m/n/12 Наличие тек-сто-во-го про-
+ []
+
+
+Underfull \hbox (badness 1838) in paragraph at lines 328--328
+\T2A/cmr/m/n/12 но-стей и ав-то-ма-ти-че-ской
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 330--330
+[]|\T2A/cmr/m/n/12 Возможность от-ка-тить
+ []
+
+[9] [10] [11] ("C:\Users\Р”РёРјР°\Desktop\dp\start 1.aux") ) 
+Here is how much of TeX's memory you used:
+ 2192 strings out of 494045
+ 29239 string characters out of 3143962
+ 115894 words of memory out of 3000000
+ 5492 multiletter control sequences out of 15000+200000
+ 6622 words of font info for 19 fonts, out of 3000000 for 9000
+ 715 hyphenation exceptions out of 8191
+ 28i,6n,27p,946b,202s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files (
+x86)/_Full_TeX/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}<C:/Program File
+s (x86)/_Full_TeX/texmf/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program F
+iles (x86)/_Full_TeX/texmf/fonts/type1/public/cm-super/sfbx1728.pfb><C:/Program
+ Files (x86)/_Full_TeX/texmf/fonts/type1/public/cm-super/sfrm1200.pfb>
+Output written on "start 1.pdf" (11 pages, 91746 bytes).
+PDF statistics:
+ 51 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+
